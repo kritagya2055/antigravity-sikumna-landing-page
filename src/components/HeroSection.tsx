@@ -32,18 +32,19 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-8 leading-[1.1]"
         >
-          Get More Leads With A <br className="hidden md:block" />
-          <span className="text-gradient">Clear Marketing Plan</span>
+          Get a Free Business <br className="hidden md:block" />
+          <span className="text-gradient">Growth Strategy Session</span>
         </motion.h1>
 
-        <motion.p 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-xl md:text-2xl text-[#B8BCC8] mb-12 max-w-3xl mx-auto font-medium"
+          className="text-xl md:text-2xl text-[#B8BCC8] mb-12 max-w-3xl mx-auto font-medium space-y-4"
         >
-          Book a free 60-minute strategy session and discover practical ways to grow your business through Meta Ads, websites, landing pages, and email marketing.
-        </motion.p>
+          <p>Discover the fastest path to generating more leads, attracting better customers, and growing your business with confidence.</p>
+          <p className="text-lg md:text-xl text-[#B8BCC8]/80">In this free 1-to-1 strategy session, we'll identify what's holding your business back and uncover practical opportunities to increase your revenue and marketing performance.</p>
+        </motion.div>
 
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -53,13 +54,13 @@ export default function HeroSection() {
         >
           <button 
             onClick={scrollToForm}
-            className="w-full sm:w-auto px-10 py-4 bg-white text-black rounded-full font-bold text-lg hover:bg-[#F4D03F] transition-all duration-300 transform hover:scale-[1.02]"
+            className="w-full sm:w-auto px-10 py-4 bg-[#D4AF37] text-black rounded-full font-bold text-lg hover:bg-[#F4D03F] transition-all duration-300 transform hover:scale-[1.02] shadow-[0_0_20px_rgba(212,175,55,0.3)]"
           >
-            Book My Free Session
+            BOOK MY FREE STRATEGY SESSION
           </button>
           
           <p className="text-sm text-[#B8BCC8]/80 mt-4">
-            No pressure. No obligation. Just practical advice for your business.
+            No obligation. No pressure. Just actionable insights tailored to your business.
           </p>
         </motion.div>
       </div>

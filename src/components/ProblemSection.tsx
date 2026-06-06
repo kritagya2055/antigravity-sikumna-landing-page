@@ -3,10 +3,12 @@
 import { motion } from "framer-motion";
 
 const problems = [
-  "You're getting visitors but not enough enquiries.",
-  "You've tried marketing but aren't seeing results.",
-  "You're not sure what's holding your business back.",
-  "You want more leads but don't know where to focus."
+  "You're getting traffic but not enough leads",
+  "You're spending money on marketing without seeing consistent results",
+  "Your website isn't converting visitors into customers",
+  "You know marketing is important but aren't sure where to focus",
+  "You're relying too heavily on referrals and word of mouth",
+  "Growth feels inconsistent and unpredictable"
 ];
 
 export default function ProblemSection() {
@@ -25,7 +27,7 @@ export default function ProblemSection() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {problems.map((problem, index) => (
             <motion.div
               key={index}
@@ -33,7 +35,7 @@ export default function ProblemSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#111827] border border-[#1F2937] rounded-2xl p-8 hover:border-[#D4AF37]/50 transition-colors duration-300"
+              className="bg-[#111827] border border-[#1F2937] rounded-2xl p-8 hover:border-[#D4AF37]/50 transition-colors duration-300 flex flex-col items-center text-center"
             >
               <div className="w-12 h-12 bg-[#D4AF37]/10 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,6 +46,16 @@ export default function ProblemSection() {
             </motion.div>
           ))}
         </div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center text-xl text-[#D4AF37] font-semibold max-w-3xl mx-auto"
+        >
+          If any of these challenges sound familiar, this strategy session was created for you.
+        </motion.p>
       </div>
     </section>
   );

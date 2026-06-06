@@ -48,7 +48,10 @@ export default function NewsletterForm() {
           // Check if text content contains typical success phrases or if the form elements were removed
           const content = container.textContent?.toLowerCase() || '';
           if (content.includes('thank you for subscribing') || content.includes('thanks for subscribing')) {
-            router.push('/book-call');
+            // Add a short delay before redirecting to allow Flodesk's post-submit automation to finish
+            setTimeout(() => {
+              router.push('/thank-you');
+            }, 2000);
             observer.disconnect();
           }
         }

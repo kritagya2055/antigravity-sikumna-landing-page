@@ -5,33 +5,31 @@ import NewsletterForm from "./NewsletterForm";
 
 export default function NewsletterSection() {
   return (
-    <section id="flodesk-section" className="py-32 px-6 bg-[#F5EFE6] relative">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="flodesk-section" className="py-24 px-6 bg-[#111827] relative border-t border-[#1F2937]/50">
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0B0D12] mb-6 tracking-tight">
-            Book Your Free 60-Minute Strategy Session
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Apply For Your Free Business Growth Strategy Session
           </h2>
-          <p className="text-lg md:text-xl text-[#111827] max-w-2xl mx-auto font-medium">
-            Fill out the form below and I'll personally review your business before our call.
+          <p className="text-xl md:text-2xl text-[#B8BCC8] max-w-2xl mx-auto font-medium">
+            Complete the short form below and tell me a little about your business. Once submitted, you'll be redirected to reserve a time for your strategy session.
           </p>
         </motion.div>
 
         <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white rounded-3xl p-8 shadow-xl mx-auto max-w-2xl relative overflow-hidden min-h-[300px] flex flex-col items-center justify-center border border-[#E5E7EB]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative max-w-xl mx-auto"
         >
-          <div className="w-full relative z-10">
-            <NewsletterForm />
-          </div>
+          <NewsletterForm />
         </motion.div>
       </div>
     </section>
