@@ -9,6 +9,13 @@ export default function BookPage() {
   const router = useRouter();
 
   useEffect(() => {
+    // Security check: Only allow access if the user has submitted the Flodesk form
+    const hasSubmitted = sessionStorage.getItem('flodesk_submitted');
+    if (!hasSubmitted) {
+      router.push('/');
+      return;
+    }
+
     // Load Calendly script
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
