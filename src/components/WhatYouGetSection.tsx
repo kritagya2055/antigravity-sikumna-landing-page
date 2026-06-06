@@ -3,30 +3,12 @@
 import { motion } from "framer-motion";
 
 const deliverables = [
-  {
-    title: "60-Minute 1-to-1 Strategy Session",
-    description: "A private consultation to dissect your current marketing funnel and identify exactly where you are losing money."
-  },
-  {
-    title: "Marketing Audit",
-    description: "An objective, expert review of your existing campaigns, brand positioning, and overall digital footprint."
-  },
-  {
-    title: "Conversion Analysis",
-    description: "Identifying the friction points in your sales process that are preventing visitors from turning into paying customers."
-  },
-  {
-    title: "Lead Generation Opportunities",
-    description: "Discovering untapped channels and strategies tailored to your specific industry and target audience."
-  },
-  {
-    title: "Actionable Growth Roadmap",
-    description: "A clear, step-by-step plan you can implement immediately to start seeing measurable improvements in revenue."
-  },
-  {
-    title: "Personalized Recommendations",
-    description: "Custom advice on the exact tools, scripts, and frameworks you need to scale efficiently."
-  }
+  "Review your current marketing",
+  "Find what's slowing your growth",
+  "Identify opportunities to get more leads",
+  "Review your website and customer journey",
+  "Create a simple action plan",
+  "Answer your questions"
 ];
 
 export default function WhatYouGetSection() {
@@ -43,7 +25,7 @@ export default function WhatYouGetSection() {
             className="w-full lg:w-1/3"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              What You'll Get
+              What We'll Cover During The Call
             </h2>
             <p className="text-[#B8BCC8] text-lg mb-8">
               This isn't a sales pitch disguised as a consultation. It's a highly valuable strategy session designed to give you extreme clarity on your next steps.
@@ -64,19 +46,14 @@ export default function WhatYouGetSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-[#111827] p-6 rounded-2xl border border-[#1F2937]"
+                className="bg-[#111827] p-6 rounded-2xl border border-[#1F2937] flex items-center gap-4"
               >
-                <div className="flex items-start gap-4">
-                  <div className="mt-1">
-                    <svg className="w-5 h-5 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-[#B8BCC8] text-sm leading-relaxed">{item.description}</p>
-                  </div>
+                <div className="flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
+                <h3 className="text-lg font-bold text-white">{item}</h3>
               </motion.div>
             ))}
           </div>

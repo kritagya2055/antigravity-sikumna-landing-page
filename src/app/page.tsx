@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import VideoSection from "@/components/VideoSection";
-import WhoIsThisForSection from "@/components/WhoIsThisForSection";
+import ProblemSection from "@/components/ProblemSection";
 import WhatYouGetSection from "@/components/WhatYouGetSection";
+import AboutSection from "@/components/AboutSection";
 import ProcessSection from "@/components/ProcessSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import FAQSection from "@/components/FAQSection";
@@ -12,9 +12,9 @@ export default function Home() {
     <main className="min-h-screen bg-background text-white">
       <Header />
       <HeroSection />
-      <VideoSection />
-      <WhoIsThisForSection />
+      <ProblemSection />
       <WhatYouGetSection />
+      <AboutSection />
       <ProcessSection />
       <NewsletterSection />
       <FAQSection />

@@ -32,8 +32,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-8 leading-[1.1]"
         >
-          Turn More Visitors <br />
-          <span className="text-gradient">Into Paying Customers</span>
+          Get More Leads With A <br className="hidden md:block" />
+          <span className="text-gradient">Clear Marketing Plan</span>
         </motion.h1>
 
         <motion.p 
@@ -42,28 +42,25 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl text-[#B8BCC8] mb-12 max-w-3xl mx-auto font-medium"
         >
-          Get a personalized marketing strategy designed to help you generate more leads, improve conversions, and grow your business with confidence.
+          Book a free 60-minute strategy session and discover practical ways to grow your business through Meta Ads, websites, landing pages, and email marketing.
         </motion.p>
 
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center justify-center gap-4"
         >
           <button 
             onClick={scrollToForm}
-            className="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-medium text-lg hover:bg-[#F4D03F] transition-all duration-300 transform hover:scale-[1.02]"
+            className="w-full sm:w-auto px-10 py-4 bg-white text-black rounded-full font-bold text-lg hover:bg-[#F4D03F] transition-all duration-300 transform hover:scale-[1.02]"
           >
             Book My Free Session
           </button>
           
-          <button 
-            onClick={scrollToVideo}
-            className="w-full sm:w-auto px-8 py-4 bg-transparent text-white border border-[#1F2937] rounded-full font-medium text-lg hover:bg-[#111827] transition-all duration-300"
-          >
-            Watch How I Work
-          </button>
+          <p className="text-sm text-[#B8BCC8]/80 mt-4">
+            No pressure. No obligation. Just practical advice for your business.
+          </p>
         </motion.div>
       </div>
     </section>

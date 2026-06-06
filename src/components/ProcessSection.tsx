@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Apply", desc: "Submit your details using the form below." },
-  { num: "02", title: "Strategy Review", desc: "I'll personally review your current marketing funnel." },
-  { num: "03", title: "Book Your Session", desc: "Choose a time that works for you." },
-  { num: "04", title: "Get Your Growth Plan", desc: "Walk away with an actionable strategy." }
+  { num: "01", title: "Fill Out The Form", desc: "Tell me a little about your business and goals." },
+  { num: "02", title: "Book Your Session", desc: "Choose a convenient time through Calendly." },
+  { num: "03", title: "Join The Call", desc: "We'll spend 60 minutes reviewing your business and marketing." },
+  { num: "04", title: "Get Clear Next Steps", desc: "Leave with practical recommendations and a plan you can take action on." }
 ];
 
 export default function ProcessSection() {
@@ -21,7 +21,7 @@ export default function ProcessSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
-            Simple Process
+            How It Works
           </h2>
           <p className="text-[#B8BCC8] text-lg max-w-2xl mx-auto">
             A straightforward path to getting extreme clarity on your marketing strategy.

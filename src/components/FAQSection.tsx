@@ -5,24 +5,28 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "Is the consultation really free?",
+    question: "Is the strategy session really free?",
     answer: "Yes, 100%. We provide this free session to demonstrate value first. If you like the roadmap, we can discuss working together. If not, you keep the strategy with no obligations."
   },
   {
     question: "How long is the session?",
-    answer: "The strategy session typically takes 60 minutes. This gives us enough time to deeply understand your business and provide actionable insights."
+    answer: "The session typically takes 60 minutes. This gives us enough time to deeply understand your business and provide actionable insights."
   },
   {
-    question: "Who is this for?",
+    question: "Who is this session for?",
     answer: "This is strictly for business owners, coaches, and consultants who are serious about growth and ready to scale their revenue."
   },
   {
-    question: "What will we cover?",
+    question: "What will we cover during the call?",
     answer: "We will perform a marketing audit, identify conversion bottlenecks, uncover lead generation opportunities, and outline an actionable growth roadmap."
   },
   {
-    question: "Do I need to hire you afterward?",
+    question: "Do I need to hire you afterwards?",
     answer: "No. There is zero pressure to hire me. If you want my help implementing the plan, we can discuss it, but the session itself is pure value and no strings attached."
+  },
+  {
+    question: "What should I prepare before the call?",
+    answer: "Please complete the brief questionnaire after booking, and have your current website analytics and any marketing performance metrics ready to share."
   }
 ];
 

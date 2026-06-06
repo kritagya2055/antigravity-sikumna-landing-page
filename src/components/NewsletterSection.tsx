@@ -18,7 +18,7 @@ export default function NewsletterSection() {
             Book Your Free 60-Minute Strategy Session
           </h2>
           <p className="text-lg md:text-xl text-[#111827] max-w-2xl mx-auto font-medium">
-            Tell me about your business and I'll personally review your marketing before our call.
+            Fill out the form below and I'll personally review your business before our call.
           </p>
         </motion.div>
 
