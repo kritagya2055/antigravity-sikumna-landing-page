@@ -45,8 +45,9 @@ export default function NewsletterForm() {
     const observer = new MutationObserver((mutationsList) => {
       for (const mutation of mutationsList) {
         if (mutation.type === 'childList') {
-          // Check if text content contains typical success phrases or if the form elements were removed
-          const content = container.textContent?.toLowerCase() || '';
+          // Use innerText instead of textContent because textContent includes hidden elements.
+          // Flodesk pre-renders the success message as hidden, which causes false-positive redirects on scroll/load!
+          const content = container.innerText?.toLowerCase() || '';
           if (content.includes('thank you for subscribing') || content.includes('thanks for subscribing')) {
             // Set a flag so the /book page knows the user legitimately completed the form
             sessionStorage.setItem('flodesk_submitted', 'true');

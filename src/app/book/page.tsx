@@ -55,10 +55,10 @@ export default function BookPage() {
             className="text-center mb-12"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
-              Schedule Your Strategy Session
+              Your Application Has Been Received
             </h1>
             <p className="text-xl text-[#B8BCC8] max-w-2xl mx-auto font-medium leading-relaxed">
-              Choose a date and time that works best for you.
+              Choose a time below to schedule your Free Business Growth Strategy Session.
             </p>
           </motion.div>
 

@@ -2,9 +2,11 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import WhatYouGetSection from "@/components/WhatYouGetSection";
-import WhoIsThisForSection from "@/components/WhoIsThisForSection";
-import ExpertiseSection from "@/components/ExpertiseSection";
 import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
+import WhoIsThisForSection from "@/components/WhoIsThisForSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
 import NewsletterSection from "@/components/NewsletterSection";
 
 export default function Home() {
@@ -14,9 +16,11 @@ export default function Home() {
       <HeroSection />
       <ProblemSection />
       <WhatYouGetSection />
-      <WhoIsThisForSection />
-      <ExpertiseSection />
       <AboutSection />
+      <ServicesSection />
+      <WhoIsThisForSection />
+      <TestimonialsSection />
+      <FAQSection />
       <NewsletterSection />
       
       <footer className="bg-[#0B0D12] py-8 text-center border-t border-[#1F2937] text-[#B8BCC8] text-sm relative z-10">
