@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function VideoSection() {
   return (
-    <section id="video-section" className="py-32 px-6 bg-background relative border-t border-[#27272A]/50">
+    <section id="video-section" className="py-24 px-6 bg-background relative border-t border-[#1F2937]/50">
       <div className="max-w-5xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -14,9 +14,9 @@ export default function VideoSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-            Before we talk, here's what you should know.
+            Watch How I Work
           </h2>
-          <p className="text-lg md:text-xl text-[#A1A1AA] max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-[#B8BCC8] max-w-3xl mx-auto">
             A quick overview of how I help business owners attract more customers and build predictable growth.
           </p>
         </motion.div>
@@ -26,10 +26,10 @@ export default function VideoSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative max-w-[1000px] mx-auto rounded-2xl overflow-hidden shadow-2xl bg-[#111111] border border-[#27272A] aspect-video flex items-center justify-center group"
+          className="relative max-w-[1000px] mx-auto rounded-2xl overflow-hidden shadow-2xl bg-[#111827] border border-[#1F2937] aspect-video flex items-center justify-center group"
         >
           {/* Subtle glow effect around video */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#111111] to-[#27272A] opacity-50 pointer-events-none group-hover:opacity-30 transition-opacity duration-700" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#111827] to-[#1F2937] opacity-50 pointer-events-none group-hover:opacity-30 transition-opacity duration-700" />
           
           <iframe 
             src="https://player.vimeo.com/video/76979871?h=8272103f6e&title=0&byline=0&portrait=0" 

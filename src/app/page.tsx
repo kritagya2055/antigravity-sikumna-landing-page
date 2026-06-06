@@ -1,28 +1,26 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import VideoSection from "@/components/VideoSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
+import WhoIsThisForSection from "@/components/WhoIsThisForSection";
+import WhatYouGetSection from "@/components/WhatYouGetSection";
 import ProcessSection from "@/components/ProcessSection";
-import CalendlySection from "@/components/CalendlySection";
-import FAQSection from "@/components/FAQSection";
 import NewsletterSection from "@/components/NewsletterSection";
+import FAQSection from "@/components/FAQSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background text-white">
       <Header />
       <HeroSection />
       <VideoSection />
-      <ProblemSection />
-      <SolutionSection />
+      <WhoIsThisForSection />
+      <WhatYouGetSection />
       <ProcessSection />
-      <CalendlySection />
-      <FAQSection />
       <NewsletterSection />
+      <FAQSection />
       
-      <footer className="bg-background py-8 text-center border-t border-[#27272A] text-[#A1A1AA] text-sm">
-        <p>&copy; {new Date().getFullYear()} Sikumna. All rights reserved.</p>
+      <footer className="bg-background py-8 text-center border-t border-[#1F2937] text-[#B8BCC8] text-sm">
+        <p>&copy; {new Date().getFullYear()} KRITAGYA. All rights reserved.</p>
       </footer>
     </main>
   );

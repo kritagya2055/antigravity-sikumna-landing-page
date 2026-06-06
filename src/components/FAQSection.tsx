@@ -9,28 +9,20 @@ const faqs = [
     answer: "Yes, 100%. We provide this free session to demonstrate value first. If you like the roadmap, we can discuss working together. If not, you keep the strategy with no obligations."
   },
   {
-    question: "Who is this for?",
-    answer: "This is for Nepal-based business owners who already have a product or service but are struggling to get consistent leads, customers, or sales from their marketing efforts."
-  },
-  {
-    question: "What will I get during the call?",
-    answer: "You'll get clarity. We will identify the exact bottlenecks in your current marketing and outline a practical step-by-step roadmap to start attracting more customers."
-  },
-  {
     question: "How long is the session?",
-    answer: "The strategy session typically takes 45 minutes. This gives us enough time to deeply understand your business and provide actionable insights."
+    answer: "The strategy session typically takes 60 minutes. This gives us enough time to deeply understand your business and provide actionable insights."
   },
   {
-    question: "Do I need a website?",
-    answer: "Not necessarily. While a website helps, we can build lead generation systems using social media, landing pages, and email marketing based on where you are right now."
+    question: "Who is this for?",
+    answer: "This is strictly for business owners, coaches, and consultants who are serious about growth and ready to scale their revenue."
   },
   {
-    question: "What happens after booking?",
-    answer: "You will receive an email confirmation with a calendar invite and a link to our video call. We also ask you to fill out a short questionnaire so we can prepare before the call."
+    question: "What will we cover?",
+    answer: "We will perform a marketing audit, identify conversion bottlenecks, uncover lead generation opportunities, and outline an actionable growth roadmap."
   },
   {
-    question: "Will you create a growth plan for my business?",
-    answer: "Yes. By the end of the session, you will have a clear, customized roadmap detailing the specific steps you need to take to increase your revenue."
+    question: "Do I need to hire you afterward?",
+    answer: "No. There is zero pressure to hire me. If you want my help implementing the plan, we can discuss it, but the session itself is pure value and no strings attached."
   }
 ];
 
@@ -42,7 +34,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-32 px-6 bg-[#0A0A0A] relative border-t border-[#27272A]/50">
+    <section className="py-24 px-6 bg-[#0B0D12] relative border-t border-[#1F2937]/50">
       <div className="max-w-3xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -64,13 +56,13 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="border border-[#27272A] rounded-2xl bg-[#111111] overflow-hidden"
+              className="border border-[#1F2937] rounded-2xl bg-[#111827] overflow-hidden hover:border-[#D4AF37]/30 transition-colors"
             >
               <button 
                 onClick={() => toggleOpen(index)}
-                className="w-full text-left px-6 py-6 flex items-center justify-between hover:bg-[#1A1A1A] transition-colors"
+                className="w-full text-left px-6 py-6 flex items-center justify-between transition-colors"
               >
-                <span className="text-lg font-medium text-white pr-8">{faq.question}</span>
+                <span className="text-lg font-bold text-white pr-8">{faq.question}</span>
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   width="20" 
@@ -81,7 +73,7 @@ export default function FAQSection() {
                   strokeWidth="2" 
                   strokeLinecap="round" 
                   strokeLinejoin="round"
-                  className={`text-[#A1A1AA] transform transition-transform duration-300 flex-shrink-0 ${openIndex === index ? "rotate-180" : ""}`}
+                  className={`text-[#B8BCC8] transform transition-transform duration-300 flex-shrink-0 ${openIndex === index ? "rotate-180" : ""}`}
                 >
                   <polyline points="6 9 12 15 18 9"/>
                 </svg>
@@ -95,7 +87,7 @@ export default function FAQSection() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="px-6 pb-6 text-[#A1A1AA] leading-relaxed">
+                    <div className="px-6 pb-6 text-[#B8BCC8] leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>

@@ -2,15 +2,19 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#27272A]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0B0D12]/80 backdrop-blur-md border-b border-[#1F2937]">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Placeholder for left side to balance center */}
         <div className="w-24 hidden md:block"></div>
 
         {/* Centered Logo */}
-        <Link href="/" className="text-xl font-semibold tracking-wide">
-          <span className="text-white">SIK</span>
-          <span className="text-[#D4AF37]">UMNA</span>
+        <Link href="/" className="flex items-center justify-center">
+          {/* We assume the user drops their logo in public/logo.png */}
+          <img 
+            src="/logo.png" 
+            alt="KRITAGYA Logo" 
+            className="h-8 w-auto object-contain"
+          />
         </Link>
 
         {/* Social Icons Right */}
