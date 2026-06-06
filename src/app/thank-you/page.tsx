@@ -1,24 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 
 export default function ThankYouPage() {
-  useEffect(() => {
-    // Load Calendly script
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <main className="min-h-screen bg-[#0B0D12] flex flex-col pt-20">
       <Header />
@@ -43,30 +28,8 @@ export default function ThankYouPage() {
               <p>Thank you for applying for a Free Business Growth Strategy Session.</p>
               <p>I've received your information successfully.</p>
               <p className="text-[#D4AF37] font-semibold mt-6">
-                The next step is to reserve a time for your session using the calendar below.
+                Please review the information below to prepare for our upcoming call.
               </p>
-            </div>
-          </motion.div>
-
-          <hr className="border-[#1F2937]" />
-
-          {/* CALENDLY SECTION */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Schedule Your Strategy Session</h2>
-            <p className="text-[#B8BCC8] mb-10 text-lg">Choose a date and time that works best for you.</p>
-            
-            <div className="w-full max-w-[800px] mx-auto bg-[#111827] rounded-3xl p-6 md:p-10 border border-[#1F2937] shadow-xl">
-              <div 
-                className="calendly-inline-widget w-full rounded-xl overflow-hidden bg-white" 
-                data-url="https://calendly.com/your-calendly-url?hide_event_type_details=1&hide_gdpr_banner=1&background_color=ffffff&text_color=000000&primary_color=d4af37" 
-                style={{ minWidth: "320px", height: "700px" }} 
-              />
             </div>
           </motion.div>
 

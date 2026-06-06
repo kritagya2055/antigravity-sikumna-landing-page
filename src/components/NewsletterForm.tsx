@@ -50,7 +50,7 @@ export default function NewsletterForm() {
           if (content.includes('thank you for subscribing') || content.includes('thanks for subscribing')) {
             // Add a short delay before redirecting to allow Flodesk's post-submit automation to finish
             setTimeout(() => {
-              router.push('/thank-you');
+              router.push('/book');
             }, 2000);
             observer.disconnect();
           }
