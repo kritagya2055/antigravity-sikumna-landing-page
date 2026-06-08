@@ -11,21 +11,26 @@ import NewsletterSection from "@/components/NewsletterSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B0D12] selection:bg-[#D4AF37]/30 selection:text-white">
+    <main className="min-h-screen bg-[#0A0A0A] text-white selection:bg-white/10 selection:text-white">
+
       <Header />
+
       <HeroSection />
+
       <ProblemSection />
+
       <WhatYouGetSection />
+
       <AboutSection />
+
       <ServicesSection />
+
       <WhoIsThisForSection />
+
       <TestimonialsSection />
+
       <FAQSection />
+
       <NewsletterSection />
-      
-      <footer className="bg-[#0B0D12] py-8 text-center border-t border-[#1F2937] text-[#B8BCC8] text-sm relative z-10">
-        <p>&copy; {new Date().getFullYear()} KRITAGYA. All rights reserved.</p>
-      </footer>
-    </main>
-  );
-}
+
+      {/* F
